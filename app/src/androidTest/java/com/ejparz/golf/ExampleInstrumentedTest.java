@@ -70,7 +70,7 @@ public class ExampleInstrumentedTest {
 
        //WebSocket ws = factory.createSocket("wss://192.168.0.15:63850");
 
-        WebSocket ws = factory.createSocket("wss://localhost:64860");
+        WebSocket ws = factory.createSocket("wss://localhost:8080");
 
         ws.connect();
     }

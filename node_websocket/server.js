@@ -3,8 +3,8 @@ const https = require('https');
 const WebSocket = require('ws');
 
 const server = https.createServer({
-  cert: fs.readFileSync('C://Users//eparz//go//Projects//personal_projects//node_websocket//server.cert'),
-  key: fs.readFileSync('C://Users//eparz//go//Projects//personal_projects//node_websocket//server.key')
+  cert: fs.readFileSync('C://Users//eparz//go//Projects//personal_projects//golf-android-app//node_websocket//server.cert'),
+  key: fs.readFileSync('C://Users//eparz//go//Projects//personal_projects//golf-android-app//node_websocket//server.key')
 });
 const wss = new WebSocket.Server({ server });
 
@@ -19,7 +19,7 @@ wss.on('connection', function connection(ws) {
   ws.send('something');
 });
 
-server.listen(function listening() {
+server.listen(8080, function listening() {
   //
   // If the `rejectUnauthorized` option is not `false`, the server certificate
   // is verified against a list of well-known CAs. An 'error' event is emitted
